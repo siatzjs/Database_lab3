@@ -1,0 +1,37 @@
+作品：works
+    作品名：wname
+    作品号：wno（p）
+    所属作品集：cname （f：collection.cname）
+
+作品集：collection
+    作品集名称：cname （p）
+    所属团体领导身份证号：lssn （f：leader.lssn）
+
+创作团体：team
+    团体名：tname 
+    领导身份证号：lssn （p）（f：leader.lssn）
+
+团体领导：leader 
+    领导身份证号：lssn （p）
+    领导姓名：lname （unique，lnameindex）
+
+作者：author
+    作者名：aname
+    作者身份证号：assn （p）
+    作者所属团体领导身份证号：lssn （f：leader.lssn） 
+
+赞助：spons
+    赞助序号：sno （p）
+    赞助者身份证号：sssn
+    赞助作品号：wno （f：works.wno）
+    赞助金额：amount
+
+评分：comments
+    评分序号：cno （p）
+    评论者身份证号：cssn
+    评分：cnum
+    评分作品号：wno （f：works.wno）
+
+排行榜：rank
+    排名：rno
+    作品序号：wno （p） （f：works.wno）
